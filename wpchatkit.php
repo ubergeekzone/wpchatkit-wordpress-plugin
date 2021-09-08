@@ -19,6 +19,6 @@ function wpchatkit_load(){
   wp_enqueue_style( 'emojionearea-css-wpchatkit', '//cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css');
   wp_enqueue_script( 'socketio-wpchatkit', '//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js', null, "", true);
   wp_enqueue_script( 'emojionearea-wpchatkit', '//cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js', null, "", true);
-  wp_enqueue_script( 'wpchatkit-core-js', '//wp-chatkit.herokuapp.com/assets/js/chat.js', null, "", true);
+  wp_enqueue_script( 'wpchatkit-core-js', '//localhost:5000/assets/js/chat.js', null, "", true);
   wp_enqueue_script( 'wpchatkit-js', plugin_dir_url( __FILE__ ) . '/wpchatkit.js', array( 'jquery', 'socketio-wpchatkit', 'emojionearea-wpchatkit' ), "", true);
 }

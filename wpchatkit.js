@@ -4,7 +4,7 @@ var storage = {currentRoom: "public", currentUser: null}
 
 $("#inRoom").text("#"+storage.currentRoom);
 
-var chatroom = new WP_Chatkit('/XLNZqA4oAx');
+var chatroom = new WP_Chatkit('/'+window.location.hostname);
 
 var username = chatroom.auth(prompt("What's your name?"), function(username) {
   chatroom.connect(username);
